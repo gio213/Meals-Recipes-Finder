@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Meals' Recipes Finder" />
+    <meta
+      name="image"
+      property="og:image"
+      content="https://www.canva.com/design/DAFeHcp8w9Q/yxNm5IbJUnCEmiLZlohvgQ/view?utm_content=DAFeHcp8w9Q&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+    />
+    <meta
+      property="og:description"
+      content="Find meals' recipes by name or category"
+    />
+    <meta
+      property="og:url"
+      content="https://gio213.github.io/Meal-finder-app/"
+    />
+
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meals' Recipes</title>
+  </head>
+  <body>
+    <div id="inputyAndCategoryDiv">
+      <button id="button"><-- Back/Reset</button>
+      <input type="text" id="input" placeholder="Search by meal name" />
+
+      <select id="category">
+        <option value="none">Filter by category</option>
+      </select>
+    </div>
+    <div id="container"></div>
+    <div id="secondContainer"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
