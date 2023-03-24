@@ -40,7 +40,8 @@ async function getMeal() {
       secondContainer.setAttribute("class", "secondContainer");
 
       const data = e.target.data;
-      console.log(data);
+      
+      
 
       const mealImg = e.target.src;
 
@@ -139,14 +140,14 @@ button.addEventListener("click", () => {
 
 searchInput.addEventListener("keyup", (e) => {
   const searchValue = e.target.value;
-  console.log(searchValue);
+  
   async function getSearchedMeal() {
     const response = await fetch(
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`
     );
     const data = await response.json();
     const meal = data.meals[0];
-    console.log(meal);
+    
 
     container.innerHTML = "";
     const box = document.createElement("div");
@@ -160,7 +161,7 @@ searchInput.addEventListener("keyup", (e) => {
     img.src = meal.strMealThumb;
     img.alt = meal.strMeal;
     img.data = meal;
-    console.log(meal.strArea);
+    
 
     box.appendChild(img);
 
@@ -173,7 +174,7 @@ searchInput.addEventListener("keyup", (e) => {
         secondContainer.setAttribute("class", "secondContainer");
 
         const data = e.target.data;
-        console.log(data);
+        
 
         const mealImg = e.target.src;
 
@@ -261,7 +262,7 @@ async function getMealByCategory() {
     .then((response) => response.json())
     .then((data) => {
       const categories = data.categories;
-      console.log(categories);
+     
       const select = document.getElementById("category");
       categories.forEach((category) => {
         const option = document.createElement("option");
