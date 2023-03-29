@@ -312,7 +312,6 @@ async function getMealByCategory() {
             for (let i = 0; i < meals.length; i++) {
               rendrerData(meals[i]);
             }
-            
 
             container.childNodes.forEach((box) => {
               box.addEventListener("click", (e) => {
